@@ -54,7 +54,7 @@
 }
 
 /* --- Google Fonts Import --- */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Alegreya+SC:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Alegreya+SC:wght@400;500;700&display=swap');
 
 /* --- CSS Custom Properties --- */
 :root {
@@ -77,8 +77,8 @@
   --color-muted-clay: #A0785A;
 
   /* Typography */
-  --font-heading: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
-  --font-body: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-heading: 'EB Garamond', 'Alegreya', Georgia, serif;
+  --font-body: 'EB Garamond', 'Alegreya', Georgia, serif;
   --font-accent: 'Alegreya', 'EB Garamond', Georgia, serif;
   --font-smallcaps: 'Alegreya SC', 'EB Garamond', Georgia, serif;
   --font-kannada: 'BelurKannada', 'Benne', 'Noto Sans Kannada', sans-serif;
