@@ -156,7 +156,7 @@ img {
 .banner-logo-right {
   position: absolute;
   top: var(--space-md);
-  height: 68px;
+  height: 88px;
   width: auto;
   object-fit: contain;
   z-index: 2;
