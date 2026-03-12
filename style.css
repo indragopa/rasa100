@@ -143,6 +143,20 @@ body::before {
 }
 
 /* --- Typography --- */
+
+/* Visually hidden - for screen readers only */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 500;
@@ -510,6 +524,35 @@ nav {
   font-size: 0.85rem;
   letter-spacing: 0.12em;
   color: var(--color-muted-clay);
+}
+
+/* Hero Logo Images */
+.hero-logo-main {
+  display: block;
+  max-width: 500px;
+  width: 90%;
+  height: auto;
+  margin: 0 auto var(--space-md);
+}
+
+.hero-logo-rasa100 {
+  display: block;
+  max-width: 200px;
+  width: 50%;
+  height: auto;
+  margin: 0 auto var(--space-lg);
+}
+
+/* Satarasa Kannada Logo Section */
+.satarasa-kan-section {
+  padding: var(--space-xl) 0;
+}
+
+.satarasa-kan-logo {
+  max-width: 400px;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
 }
 
 /* --- Page Hero (inner pages) --- */
@@ -1417,6 +1460,18 @@ footer {
 
   .hero h1 {
     font-size: 2rem;
+  }
+
+  .hero-logo-main {
+    max-width: 300px;
+  }
+
+  .hero-logo-rasa100 {
+    max-width: 140px;
+  }
+
+  .satarasa-kan-logo {
+    max-width: 280px;
   }
 
   .container,
