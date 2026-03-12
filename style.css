@@ -151,28 +151,28 @@ img {
   display: block;
 }
 
-/* Top-bar logo (Brahmavidya watermark beside tagline) */
-.top-bar-logo {
-  height: 32px;
+/* Banner corner logos (BV water.png left, Rasa 100 logo.png right) */
+.banner-logo-left,
+.banner-logo-right {
+  position: absolute;
+  top: var(--space-md);
+  height: 48px;
   width: auto;
   object-fit: contain;
-  display: inline-block;
-  vertical-align: middle;
-  flex-shrink: 0;
+  z-index: 2;
+}
+
+.banner-logo-left {
+  left: var(--space-md);
+}
+
+.banner-logo-right {
+  right: var(--space-md);
 }
 
 /* Hero — main title logo (satarasa eng.png) */
 .hero-logo-main {
   max-width: 480px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto var(--space-sm);
-  object-fit: contain;
-}
-
-/* Hero — rasa100 logo (rasa 100 logo.png) */
-.hero-logo-rasa100 {
-  max-width: 180px;
   width: 100%;
   height: auto;
   margin: 0 auto var(--space-sm);
@@ -343,29 +343,6 @@ a:hover {
   bottom: -0.55rem;
   left: 50%;
   transform: translateX(-50%);
-}
-
-/* --- Top Bar --- */
-.top-bar-wrapper {
-  background: var(--color-deep-earth);
-  position: relative;
-  z-index: 1001;
-}
-
-.top-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-sm);
-  padding: var(--space-xs) var(--space-md);
-}
-
-.top-bar-text {
-  font-family: var(--font-accent);
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--color-cream);
 }
 
 /* --- Navigation --- */
@@ -1453,8 +1430,9 @@ footer {
     max-width: 340px;
   }
 
-  .hero-logo-rasa100 {
-    max-width: 140px;
+  .banner-logo-left,
+  .banner-logo-right {
+    height: 36px;
   }
 
   .nav-links {
@@ -1530,8 +1508,18 @@ footer {
     max-width: 260px;
   }
 
-  .hero-logo-rasa100 {
-    max-width: 110px;
+  .banner-logo-left,
+  .banner-logo-right {
+    height: 28px;
+    top: var(--space-sm);
+  }
+
+  .banner-logo-left {
+    left: var(--space-sm);
+  }
+
+  .banner-logo-right {
+    right: var(--space-sm);
   }
 
   .portrait-img {
@@ -1616,7 +1604,7 @@ footer {
 
 /* --- Print Styles --- */
 @media print {
-  nav, .hamburger, .top-bar-wrapper, footer {
+  nav, .hamburger, footer {
     display: none;
   }
 
