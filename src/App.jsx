@@ -69,7 +69,7 @@ function App() {
     async function loadPage() {
       setIsLoading(true)
 
-      const response = await fetch(sourceFile)
+      const response = await fetch(sourceFile, { cache: 'force-cache' })
       const text = await response.text()
       if (isCancelled) return
 
