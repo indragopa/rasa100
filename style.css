@@ -687,6 +687,22 @@ main {
   gap: var(--space-lg);
 }
 
+/* --- Programme Gallery --- */
+.programme-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+}
+
+.programme-gallery img {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(196, 136, 58, 0.25);
+  padding: var(--space-xs);
+  background: var(--color-light-parchment);
+}
+
 /* --- Highlight Box (Shloka / Quote) --- */
 .shloka-box {
   background: linear-gradient(
